@@ -1,11 +1,11 @@
-# Vitrine Digital - Deploy no Railway
+# TUTORIAL PRO VANDO
 
 Este projeto esta separado em dois apps:
 
 - backend: API Node.js + Express + Prisma
 - frontend: React + Vite
 
-## 1. Publicar backend no Railway
+## 1. Publicar backend no Railway - Passos para EU fazer
 
 1. Suba este projeto para o GitHub.
 2. No Railway, clique em New Project > Deploy from GitHub Repo.
@@ -38,11 +38,6 @@ Opcao B: usar banco externo (Neon/Supabase) e colar DATABASE_URL no backend.
    - VITE_PUBLIC_APP_URL=<URL_FRONTEND>
 4. Build Command: npm run build
 5. Start Command: npm run start
-
-## 4. Compartilhar com seu amigo
-
-- Envie apenas a URL do frontend.
-- O frontend fara chamadas para a API publica do backend.
 
 ## 5. Observacoes importantes
 
