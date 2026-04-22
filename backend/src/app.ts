@@ -16,6 +16,17 @@ const defaultAllowedOrigins = [
 	"https://captivating-imagination-production-a809.up.railway.app"
 ];
 
+const localDevHosts = new Set(["localhost", "127.0.0.1", "::1"]);
+
+function isLocalDevOrigin(origin: string) {
+	try {
+		const url = new URL(origin);
+		return localDevHosts.has(url.hostname);
+	} catch {
+		return false;
+	}
+}
+
 const allowedOrigins = new Set(
 	env.CORS_ORIGINS
 		? env.CORS_ORIGINS.split(",")
@@ -28,7 +39,7 @@ app.use(helmet());
 app.use(
 	cors({
 		origin(origin, callback) {
-			if (!origin || allowedOrigins.has(origin)) {
+			if (!origin || allowedOrigins.has(origin) || isLocalDevOrigin(origin)) {
 				callback(null, true);
 				return;
 			}

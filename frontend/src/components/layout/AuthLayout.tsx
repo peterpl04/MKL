@@ -9,7 +9,7 @@ export function AuthLayout({ title, subtitle, children }: { title: string; subti
       <div className="relative mx-auto w-full max-w-5xl">
         <header className="mb-8 flex items-center justify-between">
           <Link to="/" className="text-xl font-black tracking-tight text-slate-900">
-            Vitrine Digital
+            P/W Digital
           </Link>
           <span className="rounded-full border border-slate-300 bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-slate-700">
             SaaS para empresas locais
