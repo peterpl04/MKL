@@ -53,7 +53,7 @@ export function RegisterPage() {
   return (
     <>
       <Helmet>
-        <title>Criar Conta | P/W Digital</title>
+        <title>Criar Conta | Vitrine Digital</title>
       </Helmet>
 
       <AuthLayout title="Crie sua Vitrine" subtitle="Comece gratuitamente e publique sua página profissional hoje.">

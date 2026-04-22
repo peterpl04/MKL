@@ -5,10 +5,10 @@ export function LandingPage() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-gradient-to-br from-teal-50 via-amber-50 to-slate-100">
       <Helmet>
-        <title>P/W Digital | Site Builder para Empresas Locais</title>
+        <title>Vitrine Digital | Site Builder para Empresas Locais</title>
         <meta
           name="description"
-          content="Crie sua página profissional em minutos com a P/W Digital. Mostre seus produtos, receba contatos e fortaleça sua presença online."
+          content="Crie sua página profissional em minutos com a Vitrine Digital. Mostre seus produtos, receba contatos e fortaleça sua presença online."
         />
       </Helmet>
 
@@ -17,7 +17,7 @@ export function LandingPage() {
 
       <section className="relative mx-auto flex w-full max-w-6xl flex-col px-4 py-8">
         <header className="flex items-center justify-between">
-          <span className="text-xl font-black tracking-tight text-slate-900">P/W Digital</span>
+          <span className="text-xl font-black tracking-tight text-slate-900">Vitrine Digital</span>
           <div className="flex gap-2">
             <Link to="/login" className="rounded-xl px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-white/70">
               Entrar

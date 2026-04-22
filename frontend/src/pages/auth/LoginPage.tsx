@@ -42,7 +42,7 @@ export function LoginPage() {
   return (
     <>
       <Helmet>
-        <title>Entrar | P/W Digital</title>
+        <title>Entrar | Vitrine Digital</title>
       </Helmet>
 
       <AuthLayout title="Entre na sua conta" subtitle="Acesse sua área de gestão e atualize sua vitrine em minutos.">

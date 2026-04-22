@@ -65,8 +65,8 @@ export function CompanyPublicPage() {
   const isDark = company.theme === "DARK";
   const whatsappUrl = buildWhatsAppUrl(company.whatsapp, company.name);
   const mapsUrl = buildGoogleMapsUrl(company.mapsQuery, company.address);
-  const pageTitle = `${company.name} | P/W Digital`;
-  const pageDescription = company.description || `Conheça ${company.name} e seus produtos na P/W Digital.`;
+  const pageTitle = `${company.name} | Vitrine Digital`;
+  const pageDescription = company.description || `Conheça ${company.name} e seus produtos na Vitrine Digital.`;
 
   return (
     <main className={isDark ? "min-h-screen bg-slate-950 text-slate-100" : "min-h-screen bg-slate-50 text-slate-900"}>
