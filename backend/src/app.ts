@@ -5,11 +5,38 @@ import morgan from "morgan";
 import path from "node:path";
 import { routes } from "routes.js";
 import { errorHandler } from "middlewares/error-handler.js";
+import { env } from "config/env.js";
 
 const app = express();
 
+const defaultAllowedOrigins = [
+	"http://localhost:5173",
+	"http://127.0.0.1:5173",
+	"https://pwdigital.up.railway.app",
+	"https://captivating-imagination-production-a809.up.railway.app"
+];
+
+const allowedOrigins = new Set(
+	env.CORS_ORIGINS
+		? env.CORS_ORIGINS.split(",")
+				.map((origin) => origin.trim())
+				.filter(Boolean)
+		: defaultAllowedOrigins
+);
+
 app.use(helmet());
-app.use(cors());
+app.use(
+	cors({
+		origin(origin, callback) {
+			if (!origin || allowedOrigins.has(origin)) {
+				callback(null, true);
+				return;
+			}
+
+			callback(new Error(`Origem não permitida pelo CORS: ${origin}`));
+		}
+	})
+);
 app.use(morgan("dev"));
 app.use(express.json());
 
