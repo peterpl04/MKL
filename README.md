@@ -1,11 +1,22 @@
 # TUTORIAL PRO VANDO
 
-Este projeto esta separado em dois apps:
+O projeto tá separado em dois apps:
 
-- backend: API Node.js + Express + Prisma
-- frontend: React + Vite
+- tem backend: API Node.js + Express + Prisma
+- e o frontend: React + Vite
 
-## 1. Publicar backend no Railway - Passos para EU fazer
+Em relação as alterações que a gente fazer, é só commitar e dar um push no git (logo te dou acesso).
+
+Estamos usando um site de deploy, o Railway, que também logo te dou o acesso e explico como ele funciona.
+
+Basta dar o push e o site começara a buildar automaticamente o site, com base nas suas alterações.
+
+Pra gente se ajudar e não fuder com tudo, peça para o agente do github conferir se há algo errado.
+(ou peça pra ele fazer pra ti o que você acha que precisa ser feito, eu sei que você é anti IA mas esse é o futuro fio)
+
+
+### NÃO PRECISA LER, UMA HORA OU OUTRA EU TE EXPLICO
+## 1. Publicar backend no Railway -
 
 1. Suba este projeto para o GitHub.
 2. No Railway, clique em New Project > Deploy from GitHub Repo.

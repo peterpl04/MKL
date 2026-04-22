@@ -5,9 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    allowedHosts: ['captivating-imagination-production-a809.up.railway.app', 'localhost', '127.0.0.1'],
+    allowedHosts: ["pwdigital.up.railway.app", "localhost", "127.0.0.1"],
   },
   preview: {
-    allowedHosts: ['captivating-imagination-production-a809.up.railway.app', 'localhost', '127.0.0.1'],
+    allowedHosts: ["pwdigital.up.railway.app", "localhost", "127.0.0.1"],
   },
-})
+});
