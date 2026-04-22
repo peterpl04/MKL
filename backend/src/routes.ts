@@ -10,6 +10,10 @@ routes.get("/health", (_req, res) => {
   return res.status(200).json({ status: "ok" });
 });
 
+routes.get("/", (_req, res) => {
+  return res.status(200).json({ status: "ok" });
+});
+
 routes.use("/auth", authRoutes);
 routes.use("/companies", companyRoutes);
 routes.use("/products", productRoutes);
