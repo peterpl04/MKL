@@ -16,7 +16,7 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-10 border-b border-slate-200 bg-white/90 backdrop-blur">
         <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-4">
           <Link to="/app" className="text-lg font-black tracking-tight text-slate-900">
-            Vitrine Digital
+            P/W Digital
           </Link>
 
           <nav className="flex items-center gap-1 rounded-xl bg-slate-100 p-1">

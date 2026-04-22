@@ -32,7 +32,7 @@ export function DashboardHomePage() {
   return (
     <DashboardLayout>
       <Helmet>
-        <title>Dashboard | Vitrine Digital</title>
+        <title>Dashboard | P/W Digital</title>
       </Helmet>
 
       <section className="grid gap-4 md:grid-cols-3">
