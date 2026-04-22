@@ -158,7 +158,7 @@ export function CompanyPage() {
   return (
     <DashboardLayout>
       <Helmet>
-        <title>Empresa | Vitrine Digital</title>
+        <title>Empresa | P/W Digital</title>
       </Helmet>
 
       <h1 className="text-2xl font-black tracking-tight text-slate-900">Cadastro da Empresa</h1>

@@ -137,7 +137,7 @@ export function ProductsPage() {
   return (
     <DashboardLayout>
       <Helmet>
-        <title>Produtos | Vitrine Digital</title>
+        <title>Produtos | P/W Digital</title>
       </Helmet>
 
       <h1 className="text-2xl font-black tracking-tight text-slate-900">Produtos e Serviços</h1>

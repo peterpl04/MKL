@@ -20,7 +20,7 @@ export function buildWhatsAppUrl(phone?: string, businessName?: string) {
   }
 
   const cleanPhone = phone.replace(/\D/g, "");
-  const text = encodeURIComponent(`Olá! Encontrei seu Site pela Vitrine Digital e quero saber mais sobre!`);
+  const text = encodeURIComponent(`Olá! Encontrei seu Site pela P/W Digital e quero saber mais sobre ${businessName || "sua empresa"}.`);
   return `https://wa.me/${cleanPhone}?text=${text}`;
 }
 
